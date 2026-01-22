@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가계부톡AI - 고객 지원</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #0B101A 0%, #1a1f2e 100%);
+            color: #E8EEFF;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .logo h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .logo p {
+            color: #A5AEC1;
+            font-size: 1rem;
+        }
+        .card {
+            background: #121723;
+            border-radius: 20px;
+            padding: 32px;
+            margin-bottom: 24px;
+            border: 1px solid #273041;
+        }
+        .card h2 {
+            font-size: 1.25rem;
+            margin-bottom: 16px;
+            color: #3182F6;
+        }
+        .card p, .card li {
+            color: #A5AEC1;
+            line-height: 1.7;
+            margin-bottom: 12px;
+        }
+        .card ul {
+            padding-left: 20px;
+        }
+        .contact-btn {
+            display: inline-block;
+            background: #3182F6;
+            color: white;
+            padding: 14px 28px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 8px;
+            transition: background 0.2s;
+        }
+        .contact-btn:hover {
+            background: #1B64DA;
+        }
+        .features {
+            display: grid;
+            gap: 16px;
+        }
+        .feature {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+        .feature-icon {
+            font-size: 1.5rem;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #4B5563;
+            font-size: 0.875rem;
+        }
+        .footer a {
+            color: #3182F6;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <h1>가계부톡AI</h1>
+            <p>AI 기반 스마트 가계부</p>
+        </div>
+
+        <div class="card">
+            <h2>앱 소개</h2>
+            <p>가계부톡AI는 자연어로 수입과 지출을 기록하는 AI 가계부 앱입니다.</p>
+            <div class="features">
+                <div class="feature">
+                    <span class="feature-icon">💬</span>
+                    <p><strong>대화형 입력</strong> - "오늘 점심 9천원" 처럼 말하듯이 입력</p>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">🤖</span>
+                    <p><strong>AI 자동 분류</strong> - 카테고리 자동 인식 및 분류</p>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">📊</span>
+                    <p><strong>통계 시각화</strong> - 월별 수입/지출 차트</p>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">🌍</span>
+                    <p><strong>다국어 지원</strong> - 한국어, 영어, 일본어, 스페인어, 중국어</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>고객 지원</h2>
+            <p>앱 사용 중 문제가 발생하거나 문의사항이 있으시면 아래로 연락해 주세요.</p>
+            <a href="mailto:dev.geeyong@gmail.com" class="contact-btn">이메일 문의하기</a>
+        </div>
+
+        <div class="card">
+            <h2>자주 묻는 질문</h2>
+            <ul>
+                <li><strong>데이터는 어디에 저장되나요?</strong><br>모든 데이터는 기기 내부에만 저장되며, 외부 서버로 전송되지 않습니다.</li>
+                <li><strong>인터넷 연결이 필요한가요?</strong><br>AI 분석을 위해 인터넷 연결이 필요합니다.</li>
+                <li><strong>데이터 백업은 어떻게 하나요?</strong><br>통계 화면에서 CSV 또는 PDF로 내보내기가 가능합니다.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>개인정보 처리방침</h2>
+            <p>본 앱은 사용자의 개인정보를 수집하지 않습니다. 입력된 가계부 데이터는 기기 내부 저장소에만 보관되며, AI 분석을 위해 Google Gemini API로 텍스트 데이터가 전송됩니다.</p>
+            <p><a href="privacy.html" style="color: #3182F6;">자세한 개인정보 처리방침 보기</a></p>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2025 가계부톡AI. All rights reserved.</p>
+            <p><a href="https://github.com/dev-geeyong/gagaeboo">GitHub</a></p>
+        </div>
+    </div>
+</body>
+</html>
